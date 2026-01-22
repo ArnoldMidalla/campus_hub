@@ -1,16 +1,20 @@
-'use client';
+"use client";
 
-import { useTheme } from 'next-themes';
+import { Button } from "@/components/ui/button";
+import { Moon, SunDim } from "lucide-react";
+import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded"
+    <Button
+      // size="sm"
+      variant="secondary"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="size-8 flex items-center justify-center transition-all duration-300"
     >
-      Toggle Theme
-    </button>
+      {theme === "light" ? <Moon size={16} /> : <SunDim size={20} />}
+    </Button>
   );
 }

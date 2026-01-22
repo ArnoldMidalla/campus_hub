@@ -1,5 +1,6 @@
 import AuthLayout from "@/app/components/authLayout";
 import GoogleButton from "@/app/components/googleBtn";
+import { Checkbox } from "@/components/ui/checkbox";
 
 export default function LoginPage() {
   return (
@@ -14,6 +15,7 @@ export default function LoginPage() {
             type="email"
             placeholder="sellostore@company.com"
             className="w-full border rounded-lg px-3 py-2 mt-1"
+            name="email"
           />
         </div>
 
@@ -28,7 +30,7 @@ export default function LoginPage() {
 
         <div className="flex justify-between items-center text-sm">
           <label className="flex items-center gap-2">
-            <input type="checkbox" />
+            <Checkbox />
             Remember me
           </label>
           <span className="text-blue-600 cursor-pointer hover:underline">

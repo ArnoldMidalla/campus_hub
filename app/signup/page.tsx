@@ -1,3 +1,5 @@
+"use client"
+
 import AuthLayout from "@/app/components/authLayout";
 import GoogleButton from "@/app/components/googleBtn";
 
@@ -23,6 +25,7 @@ export default function SignupPage() {
             type="email"
             placeholder="john@company.com"
             className="w-full border rounded-lg px-3 py-2 mt-1"
+            name="email"
           />
         </div>
 

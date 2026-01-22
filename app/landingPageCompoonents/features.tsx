@@ -33,7 +33,7 @@ function FeatureCard({
   return (
     <div className="flex flex-col items-center text-center font-dmSans tracking-tight font-medium w-64 gap-3">
       <div
-        className={`p-4 ${colourMap[colour]} rounded-2xl w-fit transition-transform duration-300 hover:scale-110 hover:shadow-lg`}
+        className={`p-3.5 ${colourMap[colour]} rounded-lg w-fit`}
       >
         <Icon size={16} strokeWidth={2.5} />
       </div>

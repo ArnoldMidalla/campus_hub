@@ -15,7 +15,7 @@ function StepCard({
     <div className="flex flex-col items-center gap-4">
       <div className="relative">
         <div 
-          className="absolute -top-4 -left-4 w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg z-10"
+          className="absolute -top-4 -left-4 w-14 h-14 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10"
           style={{ backgroundColor: 'var(--primary)' }}
         >
           {number}

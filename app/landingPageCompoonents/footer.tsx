@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-background border-t border-border py-16 px-4 font-dmSans">
-      <div className="max-w-7xl mx-auto">
+      <div className="lg:max-w-5xl md:max-w-4xl max-w-sm mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Section */}

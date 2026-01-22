@@ -6,8 +6,8 @@ import Logo from "./logo";
 
 export default function Navbar() {
   return (
-    <div className="w-dvw h-16 flex justify-center items-center font-dmSans tracking-tight fixed backdrop-blur-md border-b bg-white/10 dark:bg-black/10 z-50 text-sm font-medium">
-      <nav className="flex justify-between max-w-5xl flex-1">
+    <div className="w-dvw h-16 flex justify-center items-center font-dmSans tracking-tight fixed backdrop-blur-md border-b bg-white/60 dark:bg-black/30 z-50 text-sm font-medium">
+      <nav className="flex justify-between lg:max-w-5xl md:max-w-4xl max-w-sm flex-1">
         <Link href="/" className="flex gap-2 items-center">
           {/* <Image
             src="/favicons/favicon-32x32.png"
@@ -15,11 +15,9 @@ export default function Navbar() {
             width={30}
             height={30}
           /> */}
-          <Logo/>
+          <Logo />
           <p className="">Campus Hub</p>
         </Link>
-
-        <ThemeToggle />
 
         <div className="flex gap-4">
           <Button asChild size="sm" variant="secondary">
@@ -28,6 +26,7 @@ export default function Navbar() {
           <Button asChild size="sm">
             <Link href="/">Sign Up</Link>
           </Button>
+          <ThemeToggle />
         </div>
       </nav>
     </div>

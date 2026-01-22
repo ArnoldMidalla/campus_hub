@@ -1,3 +1,4 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 const testimonials = [
@@ -35,12 +36,12 @@ export default function TestimonialsSection() {
         <p className="text-sm uppercase tracking-widest text-purple-400 mb-3">
           What they say
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Our Users’ Kind Words
         </h2>
         <p className="text-gray-400">
-          Here are some testimonials from users after using the platform
-          to manage academic resources efficiently.
+          Here are some testimonials from users after using the platform to
+          manage academic resources efficiently.
         </p>
       </div>
 
@@ -70,12 +71,8 @@ export default function TestimonialsSection() {
               </div>
 
               <div>
-                <p className="text-white font-medium text-sm">
-                  {item.name}
-                </p>
-                <p className="text-gray-400 text-xs">
-                  {item.role}
-                </p>
+                <p className="text-white font-medium text-sm">{item.name}</p>
+                <p className="text-gray-400 text-xs">{item.role}</p>
               </div>
             </div>
           </div>
@@ -84,11 +81,11 @@ export default function TestimonialsSection() {
 
       {/* Navigation Buttons (optional) */}
       <div className="flex justify-center items-center gap-4 mt-10">
-        <button className="w-10 h-10 rounded-full border border-white/10 text-white/70 hover:text-white hover:border-white/30 transition">
-          ←
+        <button className="w-10 h-10 rounded-full text-white border border-white/30 hover:bg-purple-600 flex items-center justify-center duration-200 hover:scale-110 transition-all">
+          <ChevronLeft />
         </button>
-        <button className="w-10 h-10 rounded-full bg-purple-500 text-white hover:bg-purple-600 transition">
-          →
+        <button className="w-10 h-10 rounded-full text-white border border-white/30 hover:bg-purple-600 flex items-center justify-center duration-200 hover:scale-110 transition-all">
+          <ChevronRight />
         </button>
       </div>
     </section>

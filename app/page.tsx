@@ -9,7 +9,7 @@ import TestimonialsSection from "./landingPageCompoonents/testimonials";
 export default function Home() {
   return (
     <div className="w-dvw min-h-screen flex justify-center font-dmSans tracking-tight">
-      <main className="flex-1 max-w-5xl flex flex-col gap-10 items-center text-center min-h-screen pt-32">
+      <main className="flex-1 lg:max-w-5xl md:max-w-4xl max-w-sm flex flex-col gap-10 items-center text-center min-h-screen pt-32">
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-5xl font-semibold tracking-tighter">
             All Your Academic
