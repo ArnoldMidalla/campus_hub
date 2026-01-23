@@ -32,13 +32,13 @@ export default function TestimonialsSection() {
   return (
     <section className="py-20">
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto mb-14 px-4">
-        <p className="text-sm uppercase tracking-widest text-purple-400 mb-3">
+      <div className="text-center max-w-3xl mx-auto mb-14 px-4 flex flex-col items-center">
+        <p className="bg-red-100 dark:bg-red-900/30 w-fit px-4 py-1.5 text-red-800 dark:text-red-400 font-semibold text-xs rounded-full uppercase tracking-wide">
           What they say
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Our Users’ Kind Words
-        </h2>
+        <h1 className="text-5xl font-bold tracking-tighter text-foreground pt-4">
+          Our Users Kind Words
+        </h1>
         <p className="text-gray-400">
           Here are some testimonials from users after using the platform to
           manage academic resources efficiently.

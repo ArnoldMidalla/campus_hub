@@ -36,16 +36,10 @@ export default function HowItWorks() {
     <section className="w-full min-h-screen bg-background py-20 px-4 font-dmSans">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
         {/* Header */}
-        <p 
-          className="w-fit px-4 py-1.5 font-semibold text-sm rounded-full uppercase tracking-widest"
-          style={{ 
-            backgroundColor: 'var(--dark, #ede9fe)' + '20',
-            color: 'var(--primary)'
-          }}
-        >
+        <p className="bg-orange-100 dark:bg-orange-900/30 w-fit px-4 py-1.5 text-orange-800 dark:text-orange-400 font-semibold text-xs rounded-full uppercase tracking-wide">
           How It Works
         </p>
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground text-center">
+        <h1 className="text-5xl font-bold tracking-tighter text-foreground">
           Few Easy Steps and Done
         </h1>
         <p className="text-center max-w-3xl text-lg leading-relaxed text-muted-foreground mb-4">
